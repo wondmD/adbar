@@ -3,6 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  color-scheme: light;
+  --brand: #1b1b1b; /* main brand (adjust to match logo) */
+  --brand-accent: #b79248; /* warm accent (adjust to match logo) */
 }
 
 @theme inline {
@@ -12,15 +15,47 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Simple reveal animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.reveal.in {
+  animation: fadeUp 420ms ease-out forwards;
+  animation-delay: var(--delay, 0ms);
+}
+
+/* Luxury subtle background motion */
+@keyframes subtlePan {
+  0% { background-position: 0px 0px; }
+  100% { background-position: 220px 140px; }
+}
+
+.bg-pan-slow {
+  animation: subtlePan 28s linear infinite alternate;
+}
+
+@keyframes floatUpDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.float-slow { animation: floatUpDown 7s ease-in-out infinite; }
