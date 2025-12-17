@@ -9,6 +9,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  turbopack: {
+    // Silence workspace root inference warning by pinning root here
+    root: __dirname,
+  },
 };
 
 export default nextConfig;
