@@ -64,7 +64,10 @@ export default function Home() {
             />
           </div>
           {/* Decorative arches overlay */}
-          <div className="pointer-events-none absolute inset-0 z-10 bg-[url('/images/arches.svg')] bg-repeat bg-[length:320px_320px] opacity-30 mix-blend-multiply bg-pan-slow" />
+          <div
+            className="pointer-events-none absolute inset-0 z-10 bg-repeat bg-[length:320px_320px] opacity-30 mix-blend-multiply bg-pan-slow"
+            style={{ backgroundImage: "url(/images/arches.svg)" }}
+          />
           {/* Accent radial glows */}
           <div className="pointer-events-none absolute -left-24 -top-24 z-10 h-64 w-64 rounded-full bg-[radial-gradient(closest-side,rgba(183,146,72,0.18),transparent_70%)]" />
           <div className="pointer-events-none absolute -right-20 bottom-10 z-10 h-56 w-56 rounded-full bg-[radial-gradient(closest-side,rgba(27,27,27,0.12),transparent_70%)]" />
@@ -108,7 +111,10 @@ export default function Home() {
         {/* What Makes Us Unique */}
         <section id="about" className="relative isolate overflow-hidden">
           {/* Arches pattern background */}
-          <div className="absolute inset-0 z-0 bg-[url('/images/arches.svg')] bg-repeat bg-[length:300px_300px] opacity-25 mix-blend-multiply bg-pan-slow" />
+          <div
+            className="absolute inset-0 z-0 bg-repeat bg-[length:300px_300px] opacity-25 mix-blend-multiply bg-pan-slow"
+            style={{ backgroundImage: "url(/images/arches.svg)" }}
+          />
           {/* Soft vignette for readability */}
           <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(120%_80%_at_50%_0%,white,transparent_70%)]" />
           <div className="relative z-10 mx-auto max-w-6xl px-4 py-16 sm:px-6 md:py-24">
@@ -136,7 +142,10 @@ export default function Home() {
         {/* Featured Projects */}
         <section id="portfolio" className="relative isolate overflow-hidden">
           {/* Lines pattern */}
-          <div className="absolute inset-0 z-0 bg-[url('/images/lines.svg')] bg-repeat bg-[length:360px_360px] opacity-20 bg-pan-slow" />
+          <div
+            className="absolute inset-0 z-0 bg-repeat bg-[length:360px_360px] opacity-20 bg-pan-slow"
+            style={{ backgroundImage: "url(/images/lines.svg)" }}
+          />
           <div className="relative z-10 mx-auto max-w-6xl px-4 py-16 sm:px-6 md:py-24">
           <h2 className="reveal text-3xl font-semibold tracking-tight sm:text-4xl">Featured Projects</h2>
           <p className="reveal mt-3 max-w-2xl text-zinc-600">Transforming spaces into timeless masterpieces</p>
@@ -166,7 +175,10 @@ export default function Home() {
         {/* Services + Stats */}
         <section id="services" className="relative isolate overflow-hidden">
           {/* Dots pattern */}
-          <div className="absolute inset-0 z-0 bg-[url('/images/dots.svg')] bg-repeat bg-[length:220px_220px] opacity-25 bg-pan-slow" />
+          <div
+            className="absolute inset-0 z-0 bg-repeat bg-[length:220px_220px] opacity-25 bg-pan-slow"
+            style={{ backgroundImage: "url(/images/dots.svg)" }}
+          />
           <div className="pointer-events-none absolute left-0 top-0 z-0 h-40 w-40 -translate-x-1/3 -translate-y-1/3 rounded-full bg-[radial-gradient(closest-side,rgba(183,146,72,0.14),transparent_70%)]" />
           <div className="relative z-10 mx-auto max-w-6xl px-4 py-16 sm:px-6 md:py-24">
             <h2 className="reveal text-3xl font-semibold tracking-tight sm:text-4xl">Our Services</h2>
@@ -226,7 +238,10 @@ export default function Home() {
         {/* Contact */}
         <section id="contact" className="relative isolate border-t border-zinc-200 bg-zinc-50 overflow-hidden">
           {/* Waves background */}
-          <div className="absolute inset-0 z-0 bg-[url('/images/waves.svg')] bg-repeat-x bg-[length:800px_480px] opacity-25 bg-pan-slow" />
+          <div
+            className="absolute inset-0 z-0 bg-repeat-x bg-[length:800px_480px] opacity-25 bg-pan-slow"
+            style={{ backgroundImage: "url(/images/waves.svg)" }}
+          />
           <div className="relative z-10 mx-auto max-w-6xl px-4 py-16 sm:px-6 md:py-24">
             <h2 className="reveal text-3xl font-semibold tracking-tight sm:text-4xl">Let's Create Something Beautiful</h2>
             <p className="reveal mt-3 max-w-2xl text-zinc-600">
@@ -297,7 +312,10 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="relative isolate border-t border-zinc-200 py-12 overflow-hidden">
-        <div className="pointer-events-none absolute inset-0 z-0 bg-[url('/images/arches.svg')] bg-repeat bg-[length:280px_280px] opacity-20" />
+        <div
+          className="pointer-events-none absolute inset-0 z-0 bg-repeat bg-[length:280px_280px] opacity-20"
+          style={{ backgroundImage: "url(/images/arches.svg)" }}
+        />
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 sm:px-6 md:grid-cols-4">
           <div className="space-y-3">
             <Image src="/images/logo.png" alt="ADBAR Interior Design" width={160} height={48} />
