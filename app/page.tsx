@@ -55,7 +55,7 @@ export default function Home() {
           {/* Background image */}
           <div className="absolute inset-0 z-0 opacity-30">
             <Image
-              src="https://v0-adbar.vercel.app/elegant-luxury-interior-design-materials-wood-ston.jpg"
+              src="/images/bg-materials.jpg"
               alt="Background"
               fill
               className="object-cover"
@@ -84,10 +84,10 @@ export default function Home() {
                 <a href="#contact" className="rounded-full border border-zinc-300 px-5 py-2.5 transition-colors hover:bg-zinc-50">Book a Consultation</a>
               </div>
             </div>
-            <div className="reveal relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-2xl">
+              <div className="reveal relative aspect-[4/3] w-full overflow-hidden rounded-2xl shadow-2xl">
               {/* Blurred cover image */}
               <Image
-                src="https://v0-adbar.vercel.app/luxury-modern-interior-design-living-room-with-nat.jpg"
+                 src="/images/hero-living-room.jpg"
                 alt="Luxury interior design project"
                 fill
                 className="object-cover blur-sm scale-[1.02]"
@@ -104,7 +104,7 @@ export default function Home() {
                   className="drop-shadow-xl opacity-95"
                 />
               </div>
-            </div>
+          </div>
           </div>
         </section>
 
@@ -151,13 +151,13 @@ export default function Home() {
           <p className="reveal mt-3 max-w-2xl text-zinc-600">Transforming spaces into timeless masterpieces</p>
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { title: "Modern Villa", tag: "Residential", src: "https://v0-adbar.vercel.app/luxury-residential-living-room-with-natural-light-.jpg" },
-              { title: "Executive Office", tag: "Commercial", src: "https://v0-adbar.vercel.app/contemporary-office-interior-with-wooden-elements-.jpg" },
-              { title: "Boutique Hotel", tag: "Hospitality", src: "https://v0-adbar.vercel.app/boutique-hotel-lobby-with-elegant-furniture-chande.jpg" },
-              { title: "Eco Residence", tag: "Residential", src: "https://v0-adbar.vercel.app/sustainable-home-interior-with-plants-natural-mate.jpg" },
-              { title: "Fine Dining", tag: "Hospitality", src: "https://v0-adbar.vercel.app/modern-restaurant-interior-design-ambient-lighting.jpg" },
-              { title: "Private Retreat", tag: "Residential", src: "https://v0-adbar.vercel.app/minimalist-bedroom-with-natural-materials-wood-acc.jpg" },
-            ].map((p) => (
+            { title: "Modern Villa", tag: "Residential", src: "/images/proj-modern-villa.jpeg" },
+            { title: "Executive Office", tag: "Commercial", src: "/images/proj-executive-office.webp" },
+            { title: "Boutique Hotel", tag: "Hospitality", src: "/images/proj-boutique-hotel.jpg" },
+            { title: "Eco Residence", tag: "Residential", src: "/images/proj-eco-residence.jpeg" },
+            { title: "Fine Dining", tag: "Hospitality", src: "/images/proj-fine-dining.jpeg" },
+            { title: "Private Retreat", tag: "Residential", src: "/images/proj-preivate-retreate.avif" },
+          ].map((p) => (
               <article key={p.title} className="reveal group overflow-hidden rounded-2xl border border-zinc-200 transition-transform hover:translate-y-[-2px] hover:shadow-lg">
                 <div className="relative aspect-[4/3] w-full">
                   <Image src={p.src} alt={p.title} fill sizes="(max-width: 1024px) 100vw, 33vw" className="object-cover transition-transform duration-300 group-hover:scale-105" />
@@ -260,7 +260,7 @@ export default function Home() {
                 </div>
                 <div className="relative mt-6 aspect-[4/3] w-full overflow-hidden rounded-2xl">
                   <Image
-                    src="https://v0-adbar.vercel.app/elegant-luxury-interior-design-materials-wood-ston.jpg"
+                    src="/images/hero-living-room.jpg"
                     alt="Background"
                     fill
                     className="object-cover"
